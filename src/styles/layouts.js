@@ -5,7 +5,7 @@ import React, {
 } from 'react-native';
 
 ////////////////////////////////////////
-var backgroundColor = '#F5FCFF';
+var backgroundColor = '#FFFFFF';
 
 
 
@@ -21,22 +21,22 @@ module.exports = StyleSheet.create({
   },
 
   header: {
-      flex: 4,
+      height: 64,
+      //flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: backgroundColor,
+      backgroundColor: '#283941',
   },
 
   section: {
-    flex: 12,
+    flex: 8,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: backgroundColor,
   },
 
   border: {
-      borderColor: '#54C7C3',
-      borderWidth: 1,
+
   },
   buttonwrapper: {
     flexDirection: 'column', // is the default. on web, its row.

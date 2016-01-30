@@ -22,7 +22,7 @@ class altoid extends Component {
       <View style={layouts.wrapper}>
         <View style={[layouts.wrapper, layouts.header,layouts.border]}>
           <Text style={typography.title}>
-            Welcome to Altoid.
+            Altoid
           </Text>
           <Text style={typography.subsectiontitle}>
             A Mobile Frontend framework
