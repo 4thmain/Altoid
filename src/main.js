@@ -4,8 +4,10 @@ var {
   Component,
   StyleSheet,
   TouchableHighlight,
+  StatusBarIOS,
   Text,
-  View
+  View,
+  NavigatorIOS
 } = React;
 
 //////// Helper //////////
@@ -16,6 +18,7 @@ var typography = require('./styles/typography');
 var buttons = require('./styles/buttons');
 
 //////////////////////////////
+
 class altoid extends Component {
   render() {
     return (
@@ -64,5 +67,16 @@ class altoid extends Component {
     );
   }
 }
+
+var styles = StyleSheet.create({
+  wrapper: {
+    borderRadius: 5,
+    marginBottom: 5,
+  },
+  button: {
+    backgroundColor: '#eeeeee',
+    padding: 10,
+  },
+});
 
 AppRegistry.registerComponent('altoid', () => altoid);
