@@ -4,28 +4,25 @@ var {
   Component,
   StyleSheet,
   TouchableHighlight,
-  StatusBarIOS,
   Text,
-  View,
-  NavigatorIOS
+  View
 } = React;
 
 //////// Helper //////////
 
 //////// StyleSheets //////////
-var layouts = require('./styles/layouts');
-var typography = require('./styles/typography');
-var buttons = require('./styles/buttons');
+var layouts = require('./src/layouts');
+var typography = require('./src/typography');
+var buttons = require('./src/buttons');
 
 //////////////////////////////
-
 class altoid extends Component {
   render() {
     return (
       <View style={layouts.wrapper}>
         <View style={[layouts.wrapper, layouts.header,layouts.border]}>
           <Text style={typography.title}>
-            Altoid
+            Welcome to Altoid.
           </Text>
           <Text style={typography.subsectiontitle}>
             A Mobile Frontend framework
@@ -67,16 +64,4 @@ class altoid extends Component {
     );
   }
 }
-
-var styles = StyleSheet.create({
-  wrapper: {
-    borderRadius: 5,
-    marginBottom: 5,
-  },
-  button: {
-    backgroundColor: '#eeeeee',
-    padding: 10,
-  },
-});
-
 AppRegistry.registerComponent('altoid', () => altoid);
